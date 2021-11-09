@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Better FB Gaming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    
+    
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+  </head>
+  
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="colimages" href="#" id="toggle">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" href="#">
+        <p>Better FB Gaming</p>
+        <p style="float: right;font-size:12px; font-weight:normal;">by dope</p>
+    </div>
+    <a class="coldc" href="#">
+      <p style="float: right;">source code</p>
+    </a>
+  </div>
+
+  <div class="row" id="firstrow">
+    <a class="colxc" href="#">
+      Download for Chrome
+    </a>
+    <a class="colxf" href="#">
+      Download for Firefox
+    </a>
+    <a class="colxe" href="#">
+      Download for Microsoft Edge
+    </a>
+  </div>
+
+
+  <div class="row" id="secondrow">
+    <div class="colxf" style="background: #ffbe76 url(img/2img.png) no-repeat right; 
+  background-size: 300px 300px;">
+      chat appearance
+    </div>
+    <div class="colxc" style="background: #ffbe76 url(img/1img.png) no-repeat right; 
+  background-size: 300px 300px;">
+      settings menu
+    </div>
+    <div class="colxe" style="background: #ffbe76 url(img/3img.png) no-repeat right; 
+  background-size: 250px 250px;">
+     custom emotes
+    </div>
+  </div>
+
+  
+
+  <script type="text/javascript">
+  const targetDiv = document.getElementById("firstrow");
+  const secondDiv = document.getElementById("secondrow");
+  const btn = document.getElementById("toggle");
+  btn.onclick = function() {
+      if (targetDiv.style.display !== "none") {
+          targetDiv.style.display = "none";
+          secondDiv.style.display = "flex";
+
+      } else {
+          targetDiv.style.display = "flex";
+          secondDiv.style.display = "none";
+
+      }
+  };
+</script>
+</div>
+</body>
+</html>
