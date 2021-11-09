@@ -60,19 +60,29 @@
     </div>
   </div>
 
+  <div class="row" id="thirdrow">
+    <div class="colthird">
+      <p style="font-size:21px;float:left">features:</p>
+      <p style="font-weight:normal;margin-top:5px">-overhauled facebook gaming chat, -customize chat appearance and add new emotes in the settings menu, -426 custom emotes, don't need to install anything</p>
+    </div>
+  </div>
+
   
 
   <script type="text/javascript">
   const targetDiv = document.getElementById("firstrow");
   const secondDiv = document.getElementById("secondrow");
+  const thirdDiv = document.getElementById("thirdrow");
   const btn = document.getElementById("toggle");
   btn.onclick = function() {
       if (targetDiv.style.display !== "none") {
           targetDiv.style.display = "none";
           secondDiv.style.display = "flex";
+          thirdDiv.style.display = "flex";
 
       } else {
           targetDiv.style.display = "flex";
+          thirdDiv.style.display = "none";
           secondDiv.style.display = "none";
 
       }

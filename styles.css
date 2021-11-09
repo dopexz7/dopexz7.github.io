@@ -10,6 +10,7 @@ body {
 
 .container {padding: 0; top:30%; position:absolute;left:20%; }
 #secondrow {display: none}
+#thirdrow {display: none}
 .row {padding: 3px;}
 .row2 {padding: 3px;}
 .col {
@@ -32,6 +33,27 @@ body {
   transition: .5s;
   transform: scale(.99);
 }
+
+.colthird {
+  background: #ffbe76; 
+  padding: 45px 15px; 
+  font-size: 15px;
+  font-weight: bold; 
+  color: rgba(0,0,0,0.7); 
+  min-width: 100%;
+  height:120px; 
+  margin-left: 6px; 
+  border-radius: 3px;
+}
+
+.colthird:hover {
+  text-decoration: none;
+  color: #18181b;
+  opacity: .5;
+  transition: .5s;
+  transform: scale(.99);
+}
+
 
 .coldc {
   background: #ffbe76 url(img/code.png) no-repeat left;
