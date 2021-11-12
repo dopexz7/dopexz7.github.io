@@ -14,7 +14,6 @@ body {
 .row {padding: 3px;}
 .row2 {padding: 3px;}
 .col {
-
   padding: 45px 15px; 
   font-size: 18px;
   font-weight: bold; 
@@ -22,14 +21,21 @@ body {
   height:120px; 
   margin-left: 6px; 
   border-radius: 3px;
+  -webkit-transition: opacity, transform .5s;
+  transition: opacity, transform .5s;
+  
+
 }
+.col:after {transition: .5s;}
 
 .col:hover {
   text-decoration: none;
   color: #18181b;
   opacity: .5;
+  -webkit-transition: .5s;
   transition: .5s;
   transform: scale(.99);
+
 }
 
 .colthird {
@@ -44,14 +50,6 @@ body {
   border-radius: 3px;
 }
 
-.colthird:hover {
-  text-decoration: none;
-  color: #18181b;
-  opacity: .5;
-  transition: .5s;
-  transform: scale(.99);
-}
-
 .show-more {
   background: #ffbe76; 
   padding: 0px 20px; 
@@ -60,6 +58,10 @@ body {
   height:10px; 
   margin-left: 6px; 
   border-radius: 3px;
+  -webkit-transition: opacity, transform .5s;
+  transition: opacity, transform .5s;
+  
+
 }
 
 .show-more:hover {
@@ -67,5 +69,7 @@ body {
   color: #18181b;
   opacity: .5;
   transition: .5s;
+
+  transform: scale(1.09);
   
 }
