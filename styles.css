@@ -60,8 +60,6 @@ body {
   border-radius: 3px;
   -webkit-transition: opacity, transform .5s;
   transition: opacity, transform .5s;
-  
-
 }
 
 .show-more:hover {
@@ -69,7 +67,7 @@ body {
   color: #18181b;
   opacity: .5;
   transition: .5s;
-
-  transform: scale(1.09);
+  transform: scaleX(1.1);
+  cursor: pointer;
   
 }
