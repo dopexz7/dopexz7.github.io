@@ -811,8 +811,7 @@ body.light-mode:before, body.light-mode .video-bg:before {
   padding: 20px;
   cursor: pointer;
   transition: 0.3s ease;
-  max-height: 200px;
-  height: 100%;
+  height: 200px;
 }
 .app-card:hover {
   transform: scale(1.02);
