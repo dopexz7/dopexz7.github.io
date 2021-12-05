@@ -290,6 +290,11 @@ body.light-mode:before, body.light-mode .video-bg:before {
   color: var(--inactive-color);
   margin-bottom: 14px;
 }
+.reset-defaults {
+  position: absolute;
+  bottom: 3%;
+  background: #eb3b5a;
+}
 .side-menu {
   display: flex;
   flex-direction: column;
