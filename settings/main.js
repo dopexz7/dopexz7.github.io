@@ -1,4 +1,4 @@
-(function() { 
+
 	function showhide(id){
 	        if (document.getElementById) {
 	          var divid = document.getElementById(id);
@@ -67,4 +67,3 @@
 
 
 
-}());
