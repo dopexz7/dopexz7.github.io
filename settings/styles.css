@@ -3,6 +3,123 @@
   outline: none;
   box-sizing: border-box;
 }
+
+a {
+  cursor: default;
+  text-decoration: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  
+  height: 10px;
+  cursor: pointer;
+  background: #18181b;
+  border-radius: 6px;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 24px;
+  background-color: #ffbe76 !important;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3px;
+  
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #18181b;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  border-radius: 24px;
+
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 50px;
+    cursor: pointer;
+    bottom: 0;
+    background: var(--content-bg);
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+ 
+  
+  
+  background: linear-gradient(to right top, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+input:checked + .slider {
+  background-color: var(--theme-bg-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  margin-left: 26px;
+  background: linear-gradient(to left bottom, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652);
+}
+
+
+#chat-settings {
+  display: none;
+}
+#main-tab {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+input[type="color"]{
+opacity: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: none;
+} 
+#color-picker-wrapper {
+    background: linear-gradient(to right top, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652); 
+  border: 0 !important; 
+height: 25px; 
+width: 25px;
+border-radius: 50%;
+}
+
+
+   input[type=textx] {
+    width: 73%;
+    float: left;
+    background: transparent;
+    color: #FFF;
+    display: inline-block;
+    border: 0 !important;
+    padding: 10px;
+    height: 0;
+
+    }
 :root {
   --theme-bg-color: rgba(16, 18, 27, 0.4);
   --border-color: rgba(113, 119, 144, 0.25);
@@ -291,9 +408,8 @@ body.light-mode:before, body.light-mode .video-bg:before {
   margin-bottom: 14px;
 }
 .reset-defaults {
-  position: absolute;
-  bottom: 3%;
-  background: #eb3b5a;
+  
+  color: #eb3b5a !important;
 }
 .side-menu {
   display: flex;
@@ -474,12 +590,14 @@ body.light-mode:before, body.light-mode .video-bg:before {
 }
 .content-section ul li:hover {
   background-color: var(--theme-bg-color);
+  border-radius: 13px;
 }
 .content-section ul li:hover:first-child {
-  border-radius: 13px 13px 0 0;
+  
 }
+
 .content-section ul li:hover:last-child {
-  border-radius: 0 0 13px 13px;
+  
 }
 .content-section ul li + li {
   border-top: 1px solid var(--border-color);
@@ -525,7 +643,7 @@ body.light-mode:before, body.light-mode .video-bg:before {
 .status-button {
   font-size: 15px;
   margin-top: 0;
-  padding: 6px 24px;
+  padding: 3px 20px;
 }
 @media screen and (max-width: 390px) {
   .status-button {
@@ -568,37 +686,15 @@ body.light-mode:before, body.light-mode .video-bg:before {
   border: none;
   cursor: pointer;
 }
-.dropdown ul {
-  position: absolute;
-  background: var(--dropdown-bg);
-  height: 110px;
-  width: 120px;
-  right: 0;
-  top: 20px;
-  pointer-events: none;
-  opacity: 0;
-  transform: translatey(10px);
-  transition: all 0.4s ease;
-}
-.dropdown ul li a {
-  text-decoration: none;
-  color: var(--theme-color);
-  font-size: 12px;
-}
-.dropdown.is-active ul {
-  opacity: 1;
-  pointer-events: all;
-  transform: translatey(25px);
-}
-.dropdown.is-active ul li:hover {
-  background-color: var(--dropdown-hover);
-}
 .button-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 187px;
   margin-left: auto;
+}
+.settings-inputs {
+  border-radius: 24px !important;
 }
 @media screen and (max-width: 480px) {
   .button-wrapper {

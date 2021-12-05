@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link href="styles.css" rel="stylesheet" type="text/css">
-  <script src="main.js"></script>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
@@ -19,7 +19,7 @@
 
     <div class="side-title">Main</div>
     <div class="side-menu">
-     <a href="#">
+     <a id="show-main-page">
       Main page
      </a>
      
@@ -28,24 +28,23 @@
    <div class="side-wrapper">
     <div class="side-title">Settings</div>
     <div class="side-menu">
-     <a href="#">
+     <a id="show-emote-settings">
       Emote settings
-
      </a>
-     <a href="#">
+     <a id="show-chat-settings">
       Chat settings
       <span class="notification-number">New!</span>
      </a>
-     <a href="#">
+     <a id="show-text-settings">
       Text settings
      </a>
-     <a href="#">
+     <a id="show-readability-settings">
       Readability settings
      </a>
-     <a href="#">
+     <a id="show-high-settings">
       Highlighting settings
      </a>
-     <a href="#">
+     <a id="show-other-settings">
       Other settings
      </a>
     </div>
@@ -54,13 +53,13 @@
    <div class="side-wrapper">
     <div class="side-title">Other Links</div>
     <div class="side-menu">
-     <a href="#">
+     <a>
       Tutorials
      </a>
-     <a href="#">
+     <a>
       FAQ
      </a>
-     <a href="#">
+     <a id="show-changelog">
       Changelog
      </a>
     </div>
@@ -69,10 +68,10 @@
     <div class="side-title">Other</div>
     <div class="side-menu">
      
-     <a href="#">
+     <a id="show-about">
       About
      </a>
-     <a href="#" class="reset-defaults">
+     <a class="reset-defaults">
       Reset to defaults
      </a>
     </div>
@@ -84,7 +83,7 @@
   <div class="main-container">
    <div class="main-header">
 
-    <a class="menu-link-main" href="#">Main page</a>
+    <a class="menu-link-main" id="breadcrumb">Main page</a>
     <div class="menu-circle"></div>
    </div>
    <div class="content-wrapper">
@@ -95,9 +94,451 @@
        FB Gaming Better 0.2.7
       </h3>
       <div class="content-text">New features, minor improvements and more!</div>
-      <button class="content-button">Read changelog</button>
+      <button class="content-button" id="show-changelogx">Read changelog</button>
      </div>
     </div>
+
+<div id="emote-settings" class="hide">
+<div class="content-section">
+        <div class="content-section-title">Enable emote menu</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <label class="switch">
+          <input name="checkboxx" type="checkbox" value="hidePfp">
+          <div class="slider"></div>
+          </label>
+      </li>
+</div>
+     </ul>
+     <br>
+
+    </div>
+
+</div>
+
+<div id="chat-settings" class="hide">
+<div class="content-section">
+     <div class="content-section-title">Chat background</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <div id="color-picker-wrapper">
+        <input type="color" id="colorInputId" value="#ff0000">
+        </div>
+          <input type="textx" id="chatbg" placeholder="e.g. #FFFFF or pick a color" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+                <input type="button" id="addchatBG" class="hide">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+<br>
+<div class="content-section-title">Top bar background</div>
+<ul>
+
+          
+      
+      <li class="adobe-product">
+        <div id="color-picker-wrapper">
+        <input type="color" id="colorInputId" value="#ff0000">
+        </div>
+          <input type="textx" id="chatbg" placeholder="e.g. #FFFFF or pick a color" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+        
+       </div>
+          
+       
+      </li>
+
+      
+     </ul>
+<br>
+<div class="content-section-title">Chat width</div>
+<ul>
+      <li class="adobe-product">
+        
+          <input type="textx" id="chatbg" placeholder="Enter a number, default is 354" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+     </ul>
+
+
+
+    </div>
+
+</div>
+
+
+<div id="text-settings" class="hide">
+<div class="content-section">
+     <div class="content-section-title">Chat text color</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <div id="color-picker-wrapper">
+        <input type="color" id="colorInputId" value="#ff0000">
+        </div>
+          <input type="textx" id="chatbg" placeholder="e.g. #FFFFF or pick a color" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+<br>
+<div class="content-section-title">Chat text font</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        
+          <input type="textx" id="chatbg" placeholder="e.g. Helvetica(default), calibri, Arial" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+<br>
+<div class="content-section-title">Chat text size</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+          <div class="wrapper">
+          
+          <input type="range" min="0" max="23" value="13" id="sliderInputId" style="margin-left: 15px;display: flex ;align-items: center ;justify-content: center ;flex-direction: column ;"></input>
+          <output id="sliderOutputId">13px</output>
+        </div>
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+
+
+
+    </div>
+
+</div>
+
+
+<div id="readability-settings" class="hide">
+<div class="content-section">
+        <div class="content-section-title">Enable chat split</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <label class="switch">
+          <input name="checkboxx" type="checkbox" value="hidePfp">
+          <div class="slider"></div>
+          </label>
+      </li>
+</div>
+     </ul>
+<br>
+     <div class="content-section-title">Chat split color</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <div id="color-picker-wrapper">
+        <input type="color" id="colorInputId" value="#ff0000">
+        </div>
+          <input type="textx" id="chatbg" placeholder="e.g. #FFFFF or pick a color" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+    </div>
+
+</div>
+
+<div id="high-settings" class="hide">
+<div class="content-section">
+        <div class="content-section-title">Enable highlighting keywords</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <label class="switch">
+          <input name="checkboxx" type="checkbox" value="hidePfp">
+          <div class="slider"></div>
+          </label>
+      </li>
+</div>
+     </ul>
+     <br>
+     <div class="content-section-title">Highlight keywords</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        
+          <input type="textx" id="chatbg" placeholder="Write single words, separated by a comma. Case sensitive" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+<br>
+     <div class="content-section-title">Highlight color</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <div id="color-picker-wrapper">
+        <input type="color" id="colorInputId" value="#ff0000">
+        </div>
+          <input type="textx" id="chatbg" placeholder="e.g. #FFFFF or pick a color" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+<br>
+     <div class="content-section-title">Highlight opacity</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        
+          <input type="textx" id="chatbg" placeholder="E.g. from 0.0 to 1.0" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+<br>
+    </div>
+
+</div>
+
+<div id="other-settings" class="hide">
+<div class="content-section">
+        <div class="content-section-title">Enable scroll volume control</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <label class="switch">
+          <input name="checkboxx" type="checkbox" value="hidePfp">
+          <div class="slider"></div>
+          </label>
+      </li>
+</div>
+     </ul>
+     <br>
+     <div class="content-section-title">Facebook Top Bar Color</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        <div id="color-picker-wrapper">
+        <input type="color" id="colorInputId" value="#ff0000">
+        </div>
+          <input type="textx" id="chatbg" placeholder="e.g. #FFFFF or pick a color" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+<br>
+     <div class="content-section-title">Highlight opacity</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        
+          <input type="textx" id="chatbg" placeholder="E.g. from 0.0 to 1.0" style="width: 69%;border-top-left-radius:0; border-bottom-left-radius:0">
+           <div class="button-wrapper">
+        <button class="content-button status-button" for="addchatBG">Set</button>
+       </div>
+      </li>
+</div>
+     </ul>
+<br>
+    </div>
+
+</div>
+
+<div id="changelog" class="hide">
+<div class="content-section">
+        <div class="content-section-title">0.3</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        overhauled settings
+      </li>
+      <li class="adobe-product">
+        overhauled popup menu
+      </li>
+      <li class="adobe-product">
+        new name
+      </li>
+      <li class="adobe-product">
+        new logo
+      </li>
+      <li class="adobe-product">
+        minor improvements
+      </li>
+      
+
+</div>
+     </ul>
+     <br>
+        <div class="content-section-title">0.2.7</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        feedback for reset to defaults
+      </li>
+      <li class="adobe-product">
+        hide replies toggle
+      </li>
+      <li class="adobe-product">
+        fixed chat split/message separator setting
+      </li>
+      <li class="adobe-product">
+        notification when the extension is updated
+      </li>
+      <li class="adobe-product">
+        fixed random color usernames
+      </li>
+      <li class="adobe-product">
+        mac support
+      </li>
+      <li class="adobe-product">
+        fixed firefox version
+      </li>
+      <li class="adobe-product">
+        minor improvements
+      </li>
+
+</div>
+     </ul>
+     <br>
+     <div class="content-section-title">0.2.6.4</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        removed annoying emotes from the bottom of the live stream
+      </li>
+      <li class="adobe-product">
+        fixed wide emotes
+      </li>
+      <li class="adobe-product">
+        readability setting: separate chat messages
+      </li>
+      <li class="adobe-product">
+        tooltips for settings
+      </li>
+      <li class="adobe-product">
+        vod chat background
+      </li>
+      <li class="adobe-product">
+        reset to defaults button in settings
+      </li>
+      <li class="adobe-product">
+        tooltips for settings
+      </li>
+      <li class="adobe-product">
+        extension now only works in livestream and vods pages
+      </li>
+
+</div>
+     </ul>
+     <br>
+     <div class="content-section-title">0.2.6</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        emote menu
+      </li>
+      <li class="adobe-product">
+        like/reply buttons toggle
+      </li>
+      <li class="adobe-product">
+        fixed chat messages alignment with usernames
+      </li>
+      <li class="adobe-product">
+        custom color for names in chat
+      </li>
+      <li class="adobe-product">
+        fixed random color usernames in compact mode / dark mode / light mode
+      </li>
+      <li class="adobe-product">
+        remove chat top bar toggle
+      </li>
+      <li class="adobe-product">
+        tooltips for emotes
+      </li>
+      <li class="adobe-product">
+        chat width doesn't require to type px anymore
+      </li>
+      <li class="adobe-product">
+        remove comment reactions toggle
+      </li>
+      <li class="adobe-product">
+        remove three dots toggle
+      </li>
+      <li class="adobe-product">
+        minor improvements
+      </li>
+
+</div>
+     </ul>
+     <br>
+     <div class="content-section-title">0.1</div>
+     <ul>
+          <div class="settings-inputs">
+      <li class="adobe-product">
+        initial release
+      </li>
+</div>
+     </ul>
+
+     
+
+    </div>
+
+</div>
+
+
+<div id="about" class="hide">
+<div class="content-section">
+        <div class="content-section-title">Extension</div>
+     <ul>
+          <div class="settings-inputs">
+                <li class="adobe-product">
+        
+         Submit suggestions or report bugs
+           <div class="button-wrapper">
+        <a class="content-button status-button" href="https://discord.com/channels/115255804298395651/916014345941573683">here</a>
+       </div>
+      </li>
+      <li class="adobe-product">
+        Created by
+         <span style="position:absolute;right:6%">dope, with the help of BeMyFriend</span>
+      </li>
+      <li class="adobe-product">
+        Version
+         <span style="position:absolute;right:6%">0.3</span>
+      </li>
+      
+
+</div>
+     </ul>
+     
+
+    </div>
+
+</div>
+
+
+    <div id="main-tab" class="hide">
     <div class="content-section">
      <div class="content-section-title">Emote sets</div>
      <ul>
@@ -308,12 +749,15 @@ fill="#000000" stroke="none">
        <div class="app-card__subtext">If you have any issues where chat looks weird, is buggy or glitchy - try resetting your settings to defaults.</div>
       </div>
      </div>
+</div>
     </div>
    </div>
   </div>
  </div>
  <div class="overlay-app"></div>
 </div>
+<script src="main.js"></script>
+
 </body>
 
 </html>
