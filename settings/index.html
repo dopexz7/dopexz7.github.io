@@ -171,7 +171,7 @@
      <div class="content-section-title">Chat appearance</div>
         <div id="interactive-chat">
           <div class="interactive-chat-wrapper"> 
-            <div class="interactive-chat-topbar"> 
+            <div class="interactive-chat-topbar" id="interTopBar"> 
               <div class="interactive-chat-topbar-pfp"> 
                 </div>
               <div class="interactive-chat-topbar-islive"> 
@@ -180,7 +180,7 @@
                 3h
               </div>
               <div class="interactive-chat-topbar-right">
-                <svg viewBox="0 0 44 44" width="1em" height="1em" fill="#FFF">
+                <svg viewBox="0 0 44 44" width="1em" height="1em" fill="currentColor">
                   <circle cx="7" cy="7" r="6"></circle>
                   <circle cx="22" cy="7" r="6"></circle>
                   <circle cx="37" cy="7" r="6"></circle></svg>
@@ -190,6 +190,7 @@
 
             <div class="interactive-chat-message">
               <div class="interactive-chat-message-pfp"></div>
+
               <div class="interactive-chat-message-content">
                 <span class="interactive-chat-message-username" style="color:red;">Username: </span> Nice
               </div>
@@ -198,7 +199,7 @@
 
               </div>
               <div class="interactive-chat-message-right"> 
-                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="#FFF">
+                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="currentColor">
                   <circle cx="7" cy="7" r="6"></circle>
                   <circle cx="22" cy="7" r="6"></circle>
                   <circle cx="37" cy="7" r="6"></circle></svg>
@@ -213,27 +214,27 @@
                 <span>Like</span> <span style="margin-left: 5px;">Reply</span>
 
               </div>
-              <div class="interactive-chat-message-right-like"> 
+              <div class="interactive-chat-message-right-like" id="interlikebtn"> 
                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="10px" height="10px" viewBox="0 0 512.000000 512.000000"
- preserveAspectRatio="xMidYMid meet">
+                 width="10px" height="10px" viewBox="0 0 512.000000 512.000000"
+                 preserveAspectRatio="xMidYMid meet">
 
-<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#FFF" stroke="none">
-<path d="M2890 5106 c-110 -31 -215 -114 -276 -220 -20 -32 -104 -240 -189
--461 -84 -221 -165 -429 -179 -462 -102 -243 -367 -542 -748 -846 l-128 -102
-0 -1371 0 -1371 135 -42 c310 -97 658 -169 1000 -207 227 -26 1718 -33 1820
--9 171 39 318 172 383 345 39 103 31 270 -19 378 -28 63 -29 67 -12 79 107 71
-177 143 221 228 74 146 69 352 -12 492 l-24 42 53 42 c147 117 223 308 196
-490 -20 135 -121 296 -223 357 l-27 15 29 56 c61 121 77 261 45 386 -43 164
--190 314 -365 371 -50 16 -112 18 -656 22 l-601 3 24 117 c31 154 88 498 105
-637 7 62 13 212 13 345 -1 211 -3 244 -23 325 -30 118 -61 183 -113 240 -98
-106 -289 160 -429 121z"/>
-<path d="M80 2848 c-18 -13 -43 -36 -54 -51 l-21 -28 0 -1164 0 -1164 21 -28
-c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
--479 0 -33 -22z"/>
-</g>
-</svg>
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                fill="currentColor" stroke="none">
+                <path d="M2890 5106 c-110 -31 -215 -114 -276 -220 -20 -32 -104 -240 -189
+                -461 -84 -221 -165 -429 -179 -462 -102 -243 -367 -542 -748 -846 l-128 -102
+                0 -1371 0 -1371 135 -42 c310 -97 658 -169 1000 -207 227 -26 1718 -33 1820
+                -9 171 39 318 172 383 345 39 103 31 270 -19 378 -28 63 -29 67 -12 79 107 71
+                177 143 221 228 74 146 69 352 -12 492 l-24 42 53 42 c147 117 223 308 196
+                490 -20 135 -121 296 -223 357 l-27 15 29 56 c61 121 77 261 45 386 -43 164
+                -190 314 -365 371 -50 16 -112 18 -656 22 l-601 3 24 117 c31 154 88 498 105
+                637 7 62 13 212 13 345 -1 211 -3 244 -23 325 -30 118 -61 183 -113 240 -98
+                106 -289 160 -429 121z"/>
+                <path d="M80 2848 c-18 -13 -43 -36 -54 -51 l-21 -28 0 -1164 0 -1164 21 -28
+                c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
+                -479 0 -33 -22z"/>
+                </g>
+                </svg>
               </div>
             </div>
             <div class="interactive-chat-message">
@@ -246,7 +247,7 @@ c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
 
               </div>
               <div class="interactive-chat-message-right"> 
-                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="#FFF">
+                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="currentColor">
                   <circle cx="7" cy="7" r="6"></circle>
                   <circle cx="22" cy="7" r="6"></circle>
                   <circle cx="37" cy="7" r="6"></circle></svg>
@@ -261,7 +262,7 @@ c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
                 <span>Like</span> <span style="margin-left: 5px;">Reply</span>
               </div>
               <div class="interactive-chat-message-right"> 
-                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="#FFF">
+                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="currentColor">
                   <circle cx="7" cy="7" r="6"></circle>
                   <circle cx="22" cy="7" r="6"></circle>
                   <circle cx="37" cy="7" r="6"></circle></svg>
@@ -277,7 +278,7 @@ c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
 
               </div>
               <div class="interactive-chat-message-right"> 
-                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="#FFF">
+                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="currentColor">
                   <circle cx="7" cy="7" r="6"></circle>
                   <circle cx="22" cy="7" r="6"></circle>
                   <circle cx="37" cy="7" r="6"></circle></svg>
@@ -294,7 +295,7 @@ c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
 
               </div>
               <div class="interactive-chat-message-right"> 
-                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="#FFF">
+                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="currentColor">
                   <circle cx="7" cy="7" r="6"></circle>
                   <circle cx="22" cy="7" r="6"></circle>
                   <circle cx="37" cy="7" r="6"></circle></svg>
@@ -310,7 +311,7 @@ c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
 
               </div>
               <div class="interactive-chat-message-right"> 
-                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="#FFF">
+                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="currentColor">
                   <circle cx="7" cy="7" r="6"></circle>
                   <circle cx="22" cy="7" r="6"></circle>
                   <circle cx="37" cy="7" r="6"></circle></svg>
@@ -326,7 +327,7 @@ c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
 
               </div>
               <div class="interactive-chat-message-right"> 
-                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="#FFF">
+                <svg viewBox="0 0 44 44" width="1.2em" height="1.2em" fill="currentColor">
                   <circle cx="7" cy="7" r="6"></circle>
                   <circle cx="22" cy="7" r="6"></circle>
                   <circle cx="37" cy="7" r="6"></circle></svg>
@@ -703,7 +704,7 @@ c12 -15 36 -37 55 -48 33 -19 52 -20 509 -20 l475 0 3 1263 2 1262 -478 0
         <svg viewBox="0 0 120 120">
          
 <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
-fill="#FFF" stroke="none">
+fill="currentColor" stroke="none">
 <path d="M0 590 l0 -590 610 0 610 0 0 590 0 590 -610 0 -610 0 0 -590z m528
 474 c75 -64 178 -124 214 -124 30 0 21 18 -19 39 -37 20 -37 20 -10 21 27 0
 36 13 17 25 -5 3 -10 12 -10 18 0 7 12 -1 26 -17 17 -19 22 -31 14 -36 -8 -5
@@ -753,7 +754,7 @@ c-29 14 -65 23 -89 23 -22 -1 -32 -3 -23 -6z"/>
        <div class="products">
         <svg viewBox="0 0 120 120">
          <g transform="translate(0.000000,120.000000) scale(0.100000,-0.100000)"
-fill="#FFF" stroke="none">
+fill="currentColor" stroke="none">
 <path d="M408 1137 c-26 -14 -43 -28 -42 -39 1 -9 -4 -14 -11 -12 -6 3 -18 -2
 -25 -11 -7 -8 -10 -15 -6 -15 3 0 -3 -16 -14 -35 -44 -78 -18 -102 48 -47 64
 54 135 71 181 44 21 -13 23 -13 18 1 -7 18 16 30 30 16 6 -6 16 -2 28 11 10
@@ -865,11 +866,22 @@ l22 -26 38 27 c20 15 37 32 37 37 0 6 -3 7 -7 4 -3 -4 -11 -3 -17 2 -6 5 -25
       <li class="adobe-product">
        <div class="products">
         <svg viewBox="0 0 252 252">
-         <g xmlns="http://www.w3.org/2000/svg">
-          <g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M530 1236 l0 -896 180 0 180 0 2 373 3 372 102 -2 c212 -3 227 -17 548 -501 l160 -242 219 0 218 0 -14 22 c-9 13 -74 118 -147 235 -197 318 -283 424 -406 502 l-47 30 28 6 c273 55 413 197 439 445 20 192 -80 397 -233 478 -119 62 -144 65 -714 69 l-518 4 0 -895z m934 583 c103 -29 156 -99 156 -207 0 -131 -68 -210 -195 -226 -72 -9 -501 -17 -519 -10 -14 5 -16 37 -16 230 l0 224 268 0 c161 0 282 -4 306 -11z"/>
-         </g>
+         
+<g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
+fill="currentColor" stroke="none">
+<path d="M450 2075 c0 -3 52 -68 117 -145 l116 -140 730 0 730 0 44 -45 c40
+-42 43 -49 43 -100 0 -51 -3 -58 -43 -100 l-44 -45 -792 0 -792 0 3 -92 3 -92
+60 -17 c33 -10 67 -22 75 -27 8 -5 42 -17 75 -27 33 -9 65 -21 70 -25 6 -5 39
+-16 75 -25 36 -9 70 -20 75 -25 6 -4 37 -16 70 -25 33 -10 65 -21 70 -25 6 -5
+36 -16 68 -25 32 -9 70 -23 85 -31 15 -8 34 -14 42 -14 8 0 27 -6 42 -14 15
+-8 53 -22 85 -31 32 -9 63 -20 68 -25 6 -4 39 -16 75 -25 36 -10 75 -24 87
+-31 18 -11 104 -14 433 -14 252 0 409 4 405 9 -3 5 -31 17 -63 26 -31 9 -61
+20 -67 25 -5 4 -37 15 -70 25 -33 9 -64 20 -70 25 -5 4 -46 18 -90 30 -44 12
+-84 26 -90 30 -5 4 -37 15 -70 25 -33 9 -64 20 -70 25 -5 4 -35 15 -66 24 -31
+9 -68 22 -83 30 -24 12 -2 14 202 17 148 3 234 8 243 15 8 6 37 19 66 28 73
+24 168 113 213 201 35 67 35 69 35 194 0 121 -1 129 -32 191 -37 78 -135 175
+-209 209 -27 12 -57 27 -66 32 -18 9 -1788 13 -1788 4z"/>
+</g>
         </svg>
         Ramee's set
        </div>

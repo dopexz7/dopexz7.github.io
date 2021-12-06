@@ -893,6 +893,10 @@ body.light-mode:before, body.light-mode .video-bg:before {
     z-index: 100;
     box-shadow: 0 2px 9px 2px #000;
 }
+.interactive-chat-topbar:hover {
+  cursor: pointer;
+  border: 1px solid #eb3b5a;
+}
 .interactive-chat-topbar-pfp {
     background: linear-gradient(to right top, #cf4af3, #e73bd7, #f631bc, #fd31a2, #ff3a8b, #ff4b78, #ff5e68, #ff705c, #ff8c51, #ffaa49, #ffc848, #ffe652);
     height: 35px;
@@ -924,19 +928,19 @@ body.light-mode:before, body.light-mode .video-bg:before {
 
 .interactive-chat-message {
   font-size: 13px;
-  height: 57px;
+  height: 65px;
   display: inline-block;
   width: 100%;
   padding: 12px;
 }
 .interactive-chat-message-content {
-  display: inline-block;
-  margin-left: 5%;
+  display: flex;
   color: #fff;
   font-weight: 300;
-  padding-bottom: 3px;
+  padding: 3px 10px;
 }
 .interactive-chat-message-username {
+  padding-right: 5px;
   font-weight: bold;
 }
 .interactive-chat-message-pfp {
@@ -947,27 +951,33 @@ body.light-mode:before, body.light-mode .video-bg:before {
     border-radius: 50%;
     float: left;
 }
+.interactive-chat-message-pfp:hover {
+  cursor: pointer;
+  background: #eb3b5a !important;
+}
 .interactive-chat-message-likereply {
   color: #FFF;
-  margin-left: 14%;
-  padding: 3px;
+  display: flex;
+  padding: 3px 15px;
+  width: 100px;
   font-weight: bold;
 }
-.interactive-chat-message-likereply span {
-  opacity: .1;
-  transition: .5s;
-}
-.interactive-chat-message-likereply span:hover {
-  opacity: .7;
+
+.interactive-chat-message-likereply:hover {
   cursor: pointer;
   transition: .5s;
+  color: #eb3b5a;
 }
 .interactive-chat-message-right {
   float: right;
   margin-right: 3%;
-  opacity: .1;
-  transition: .5s;
+  opacity: 1;
 }
+.interactive-chat-message-right svg:hover {
+   color: #eb3b5a !important;
+   transition: .5s;
+}
+
 .interactive-chat-message-right-like {
   float: right;
   margin-right: 3%;
@@ -975,11 +985,13 @@ body.light-mode:before, body.light-mode .video-bg:before {
   padding: 2px 4px;
   border-radius: 50%;
   border: 1px solid rgba(0,0,0,0.6);
-  
+}
+.interactive-chat-message-right-like:hover {
+  cursor: pointer;
+  color: #eb3b5a;
 }
 
 .interactive-chat-message-right:hover {
-  opacity: .7;
   transition: .5s;
   cursor: pointer;
 }

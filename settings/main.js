@@ -64,4 +64,74 @@
 		breadcrumb.innerText = "About";
 	});
 
+	var interactiveChatTopbar = document.getElementById('interTopBar');
+	interactiveChatTopbar.addEventListener('click', function() {
+		if (interactiveChatTopbar.style.opacity !== '0.05') {
+			interactiveChatTopbar.style.opacity = '0.05';
+		} else {
+			interactiveChatTopbar.style.opacity = '1';
+		}	
+	});
+	var elements = document.getElementsByClassName('interactive-chat-message-right');
+	for (var i = 0, len = elements.length; i < len; i++) {
+
+    	elements[i].onclick = function(){
+    		var elements = document.getElementsByClassName('interactive-chat-message-right');
+    		for(var j=0; j<elements.length; j++) {
+    			if (elements[j].style.opacity !== '0.05') {
+    				elements[j].style.opacity = '0.05'
+    			} else {
+    				elements[j].style.opacity = '1'
+    			}
+    			
+    		}
+    	}
+	}
+	var interlikereply = document.getElementsByClassName('interactive-chat-message-likereply');
+	for (var i = 0, len = interlikereply.length; i < len; i++) {
+
+    	interlikereply[i].onclick = function(){
+    		var interlikereply = document.getElementsByClassName('interactive-chat-message-likereply');
+    		for(var j=0; j<interlikereply.length; j++) {
+    			if (interlikereply[j].style.opacity !== '0.05') {
+    				interlikereply[j].style.opacity = '0.05'
+    			} else {
+    				interlikereply[j].style.opacity = '1'
+    			}
+    			
+    		}
+    	}
+	}
+	var likebtn = document.getElementById('interlikebtn');
+	likebtn.addEventListener('click', function(){
+		if(likebtn.style.opacity !== '0.05') {
+			likebtn.style.opacity = '0.05';
+		} else {
+			likebtn.style.opacity = '1';
+		}
+	});
+
+	var intermessagepfp = document.getElementsByClassName('interactive-chat-message-pfp');
+	for (var i = 0, len = intermessagepfp.length; i < len; i++) {
+    	intermessagepfp[i].onclick = function(){
+    		var intermessagepfp = document.getElementsByClassName('interactive-chat-message-pfp');
+    		for(var j=0; j<intermessagepfp.length; j++) {
+    			if (intermessagepfp[j].style.opacity !== '0.1') {
+    				intermessagepfp[j].style.opacity = '0.1';
+    				intermessagepfp[j].style.width = '5px';
+    				intermessagepfp[j].style.height = '5px';
+    			} else {
+    				intermessagepfp[j].style.opacity = '1'
+    				intermessagepfp[j].style.width = '30px';
+    				intermessagepfp[j].style.height = '30px';
+    			}
+    			
+    		}
+    	}
+	}
+	
+	
+
+
+
 
