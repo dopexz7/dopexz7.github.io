@@ -1,0 +1,29 @@
+{
+   "action": {
+      "default_popup": "menu.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "web_accessible_resources": [
+    {
+      "resources": ["content_new.css", "images/*", "modules/*"],
+      "matches": [ "https://*.facebook.com/*" ]
+    }
+ ],
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": ["content.css"],
+      "js": ["content.js", "jquery-3.6.0.min.js"],
+      "matches": [ "*://*.facebook.com/*videos/*"],
+      "run_at": "document_end"
+   } ],
+   "description": "FB Gaming Better. Emotes + Chat Extension with Settings",
+   "icons": {
+      "128": "icons/ico.png" 
+   },
+   "manifest_version": 3,
+   "name": "FB Gaming Better",
+   "permissions": [ "storage"],
+   "version": "0.3.4.1"
+}
