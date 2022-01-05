@@ -19,7 +19,7 @@ function testAPI() {
     FB.api('/me', function(response) {
       document.getElementById('user_name').textContent = response.name;
     });
-    location.reload();
+    
 }
 
 window.fbAsyncInit = function() {
