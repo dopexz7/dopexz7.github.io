@@ -36,12 +36,4 @@ function checkLoginState() {
   });
 }
 
-FB.api(
-    "/Ramee/live_videos",
-    function (response) {
-      if (response && !response.error) {
-        console.log(response)
-      }
-    }
-);
 
