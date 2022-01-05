@@ -8,43 +8,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-<div id="myModal" class="termmodal">
-      <!-- Modal content -->
-      <div class="modal-content" id="resetToDefaultUnderstand">
-        <p>Reset all settings and emotes to default?</p>
-        <div id="resetyes" class="modal-understand">Yes</div>
-        <div id="resetno" class="modal-understand">No</div>
-      </div>
-    </div>
-<div id="myModal2" class="termmodal">
-  <div class="modal-content" id="emoteModalUnderstand">
-    <p>Emote insertion only works when you have typed something in the chat input box.</p>
-    <div id="understand" class="modal-understand">I understand, don't show this again.</div>
-  </div>
-</div>
-<div id="myModal3" class="termmodal">
-  <div class="modal-content" id="presetsetx">
-    <p>Preset loaded.</p>
-  </div>
-</div>
-<div id="myModal4" class="termmodal">
-  <div class="modal-content" id="exportimport">
-    <p id="exportimporttext"></p>
-  </div>
-</div>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '634728921204961',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v12.0'
+    });
+      
+    FB.AppEvents.logPageView();   
+      FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+});
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+  
+</script>
 <div class="img-content-update">
        FB Gaming Better <span class="update-version" id="updateCurrentVersion"></span>
       </div>
 <div class="app">
- 
  <div class="wrapper">
-
   <div class="left-side">
-
    <div class="side-wrapper">
-    <a id="change-to-left" class="changetoleft">
-      
-     </a>
     <div class="side-title">Main</div>
     <div class="side-menu">
      <a id="show-main-page">
@@ -58,25 +52,6 @@
     <div class="side-menu">
      <a id="show-emote-settings">
       Emote settings
-      
-     </a>
-     <a id="show-chat-settings">
-      Chat settings
-     </a>
-     <a id="show-text-settings">
-      Text settings
-     </a>
-     <a id="show-usernames-settings">
-      Usernames settings
-     </a>
-     <a id="show-readability-settings">
-      Readability settings
-     </a>
-     <a id="show-high-settings">
-      Highlighting settings
-     </a>
-     <a id="show-other-settings">
-      Other settings
      </a>
     </div>
    </div>
@@ -84,12 +59,6 @@
    <div class="side-wrapper">
     <div class="side-title">Links</div>
     <div class="side-menu">
-     <a>
-      Tutorials
-     </a>
-     <a id="show-faq">
-      FAQ
-     </a>
      <a id="show-changelog">
       Changelog
      </a>
@@ -101,7 +70,6 @@
      <a id="show-about">
       About
      </a>
-     
     </div>
 
    </div>
@@ -147,46 +115,10 @@
         
        </div>
 
-      </li>
-      <li class="adobe-product">
-       <div class="products">
-      
-        Vader's set
-       </div>
-        <div class="button-wrapper">
-        <button class="content-button status-button" id="usevaderemotes">Install</button>
-        
-       </div>
-      </li>
-      
+      </li>      
      
      </ul>
     </div>
-    <div class="content-section">
-     <div class="content-section-title">Announcements</div>
-     <div class="apps-card">
-      <div class="app-card">
-       <span class="app-card__span">
-        Emote menu
-       </span>
-       <div class="app-card__subtext">Before clicking on an emote in the emote menu, you have to type something in the input box first.</div>
-       
-      </div>
-      <div class="app-card">
-       <span class="app-card__span">
-        Emote sets
-       </span>
-       <div class="app-card__subtext">If an emote set is updated, it will update 10 minutes after watching a stream or when you refresh the page.</div>
-       
-      </div>
-      <div class="app-card">
-       <span class="app-card__span">
-        Other issues
-       </span>
-       <div class="app-card__subtext">If you have any issues where chat looks weird, is buggy or glitchy - try resetting your settings to defaults.</div>
-      </div>
-     </div>
-</div>
     </div>
    </div>
 <div class="main-header">
