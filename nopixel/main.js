@@ -1,5 +1,5 @@
-setTimeout(function(){
-  function checkLoginState() {
+
+function checkLoginState() {
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
@@ -45,6 +45,3 @@ FB.api(
     }
 );
 
-
-
-},2000);
