@@ -19,7 +19,9 @@ function testAPI() {
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('user_name').textContent = response.name;
+      console.log(response)
     });
+    location.reload();
 }
 
 window.fbAsyncInit = function() {
