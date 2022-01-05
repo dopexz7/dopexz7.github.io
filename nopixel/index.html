@@ -17,10 +17,7 @@
       version    : 'v12.0'
     });
       
-    FB.AppEvents.logPageView();   
-      FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-});
+    FB.AppEvents.logPageView();  
   };
 
   (function(d, s, id){
@@ -30,7 +27,6 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-
 </script>
 <div class="img-content-update">
        FB Gaming Better <span class="update-version" id="updateCurrentVersion">0.4</span>
@@ -130,6 +126,8 @@
 
  </div>
 </div>
+
+<script src="main.js"></script>
 </body>
 
 </html>
