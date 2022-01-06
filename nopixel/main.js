@@ -15,10 +15,11 @@ function statusChangeCallback(response) {
 }
 
 function testAPI() {
+  var lmao;
     console.log('Welcome! Fetching your information.... ');
     FB.api('/me', function(response) {
-      console.log(response.name)
-          document.getElementById('user_name').textContent = response.name;
+      lmao = response.name;
+      document.getElementById('user_name').textContent = 'response.name';
 
     });
     
