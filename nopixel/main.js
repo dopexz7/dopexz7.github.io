@@ -9,6 +9,7 @@ function statusChangeCallback(response) {
   //console.log(response);
   if (response.status === 'connected') {
       testAPI();
+      console.log(response.name)
   } else {
     document.getElementById('user_name').textContent = 'Not connected';
   }
@@ -20,8 +21,10 @@ function testAPI() {
     FB.api('/me', function(response) {
       lmao = response.name;
       document.getElementById('user_name').textContent = 'response.name';
+      console.log(response.name)
 
     });
+
     
 }
 
