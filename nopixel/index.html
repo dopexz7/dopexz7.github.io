@@ -129,6 +129,7 @@ function testAPI() {
     FB.api('/me', function(response) {
       var kekw = response.name;
       document.getElementById('user_name').textContent = kekw;
+      console.log(response)
     });
 }
 
