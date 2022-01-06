@@ -17,14 +17,9 @@ function statusChangeCallback(response) {
 function testAPI() {
     console.log('Welcome! Fetching your information.... ');
     FB.api('/me', function(response) {
-      var settingUserName = setInterval(function(){
-        if(document.getElementById('user_name').textContent !== response.name) {
+      console.log(response.name)
           document.getElementById('user_name').textContent = response.name;
-        } else {
-          clearInterval(settingUserName);
-        }
-      },1);
-      
+
     });
     
 }
