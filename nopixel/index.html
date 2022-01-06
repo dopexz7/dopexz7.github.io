@@ -114,15 +114,11 @@
 <script>
 function statusChangeCallback(response) {
   //console.log('statusChangeCallback');
-  console.log(response);
+  //console.log(response);
   if (response.status === 'connected') {
-    FB.api('/me', function(response) {
-      setTimeout(function(){
-        document.getElementById('user_name').textContent = response.name;
-      }
-        ,3000)
-    });
       
+      testAPI();
+
   } else {
     document.getElementById('user_name').textContent = 'Not connected';
   }
@@ -130,7 +126,10 @@ function statusChangeCallback(response) {
 
 function testAPI() {
     console.log('Welcome! Fetching your information.... ');
-    
+    FB.api('/me', function(response) {
+      var kekw = response.name;
+      document.getElementById('user_name').textContent = kekw;
+    });
 }
 
 window.fbAsyncInit = function() {
