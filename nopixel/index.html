@@ -9,6 +9,52 @@
 </head>
 <body>
 <script>
+
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    if (response.status === 'connected') {
+      testAPI();
+
+    } else if (response.status === 'not_authorized') {
+      FB.login(function(response) {
+        statusChangeCallback2(response);
+      }, {scope: 'public_profile,email'});
+
+    } else {
+      console.log("not connected, not logged into facebook, we don't know");
+    }
+  }
+
+  function statusChangeCallback2(response) {
+    console.log('statusChangeCallback2');
+    console.log(response);
+    if (response.status === 'connected') {
+      testAPI();
+
+    } else if (response.status === 'not_authorized') {
+      console.log('still not authorized!');
+
+    } else {
+      console.log("not connected, not logged into facebook, we don't know");
+    }
+  }
+
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('user_name').innerHTML = response.name;
+    });
+  }
+
+
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '281582243953219',
@@ -17,7 +63,7 @@
       version    : 'v12.0'
     });
       
-    FB.AppEvents.logPageView();   
+    checkLoginState();  
       
   };
 
@@ -111,34 +157,7 @@
 </div>
 <!-- 
 <script src="main.js"></script> -->
-<script>
-function statusChangeCallback(response) {
-  //console.log('statusChangeCallback');
-  //console.log(response);
-  if (response.status === 'connected') {
-      
-      testAPI();
 
-  } else {
-    document.getElementById('user_name').textContent = 'Not connected';
-  }
-}
-
-function testAPI() {
-    console.log('Welcome! Fetching your information.... ');
-    FB.api('/me', function(response) {
-      var kekw = response.name;
-      document.getElementById('user_name').textContent = kekw;
-      console.log(response)
-    });
-}
-
-window.fbAsyncInit = function() {
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-};
-  </script>
 </body>
 
 </html>
