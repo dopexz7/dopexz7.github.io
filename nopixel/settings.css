@@ -1531,3 +1531,4 @@ input[type="interactive-chat-input"] {
   transform: scale(1.1);
   opacity: 1;
 }
+#videoUl {opacity: 0}
