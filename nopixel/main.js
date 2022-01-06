@@ -17,14 +17,10 @@ function statusChangeCallback(response) {
 }
 
 function testAPI() {
-  var lmao;
     console.log('Welcome! Fetching your information.... ');
     FB.api('/me', function(response) {
-      
-
+      console.log(response.name)
     });
-
-    
 }
 
 window.fbAsyncInit = function() {
