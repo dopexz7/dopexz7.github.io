@@ -114,7 +114,7 @@
 <script>
 function statusChangeCallback(response) {
   //console.log('statusChangeCallback');
-  //console.log(response);
+  console.log(response);
   if (response.status === 'connected') {
       document.getElementById('user_name').textContent = response.name;
       testAPI();
