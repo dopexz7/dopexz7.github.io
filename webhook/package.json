@@ -1,5 +1,5 @@
 {
-  "name": "messenger-webhook",
+  "name": "webhook",
   "version": "1.0.0",
   "description": "MessengerWebhook",
   "main": "index.js",
