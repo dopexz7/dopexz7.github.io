@@ -28,11 +28,6 @@ searchingStreamer.addEventListener("keyup", autocc);
 streamerPin.addEventListener('click', function(){
   var currentVal = searchingStreamer.value;
   ul = document.getElementById("videoUl");
-  
   li = ul.getElementsByTagName("div");
-  
-  document.getElementById('kekw').appendChild(document.getElementById(currentVal));
-     
+  document.getElementById('kekw').appendChild(document.getElementById(currentVal));  
 });
-
-
