@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.dffac672.css",
-    "main.js": "/static/js/main.de78ab88.js",
-    "static/js/787.ca15ac5e.chunk.js": "/static/js/787.ca15ac5e.chunk.js",
-    "static/media/GothamBook.ttf": "/static/media/GothamBook.58fb9151c57e59668f17.ttf",
-    "static/media/GothamLight.ttf": "/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
-    "static/media/GothamMedium.ttf": "/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
-    "static/media/Gotham-Bold.otf": "/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
-    "index.html": "/index.html",
-    "main.dffac672.css.map": "/static/css/main.dffac672.css.map",
-    "main.de78ab88.js.map": "/static/js/main.de78ab88.js.map",
-    "787.ca15ac5e.chunk.js.map": "/static/js/787.ca15ac5e.chunk.js.map"
+    "main.css": "/otw/static/css/main.b779d63c.css",
+    "main.js": "/otw/static/js/main.059988f5.js",
+    "static/js/787.ca15ac5e.chunk.js": "/otw/static/js/787.ca15ac5e.chunk.js",
+    "static/media/GothamBook.ttf": "/otw/static/media/GothamBook.58fb9151c57e59668f17.ttf",
+    "static/media/GothamLight.ttf": "/otw/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
+    "static/media/GothamMedium.ttf": "/otw/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
+    "static/media/Gotham-Bold.otf": "/otw/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
+    "index.html": "/otw/index.html",
+    "main.b779d63c.css.map": "/otw/static/css/main.b779d63c.css.map",
+    "main.059988f5.js.map": "/otw/static/js/main.059988f5.js.map",
+    "787.ca15ac5e.chunk.js.map": "/otw/static/js/787.ca15ac5e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dffac672.css",
-    "static/js/main.de78ab88.js"
+    "static/css/main.b779d63c.css",
+    "static/js/main.059988f5.js"
   ]
 }
