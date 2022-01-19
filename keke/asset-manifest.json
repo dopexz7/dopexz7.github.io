@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/keke/static/css/main.647078a0.css",
+    "main.js": "/keke/static/js/main.24f5b6ea.js",
+    "index.html": "/keke/index.html",
+    "main.647078a0.css.map": "/keke/static/css/main.647078a0.css.map",
+    "main.24f5b6ea.js.map": "/keke/static/js/main.24f5b6ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.647078a0.css",
+    "static/js/main.24f5b6ea.js"
+  ]
+}
