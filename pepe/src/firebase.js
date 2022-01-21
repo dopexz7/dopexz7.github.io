@@ -2,25 +2,20 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
-import { FirebaseOptions, initializeApp } from 'firebase/app';
-import { FirestoreSettings, initializeFirestore } from 'firebase/firestore';
+import { getAnalytics } from "firebase/analytics";
 
 const app = firebase.initializeApp({
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+    apiKey: "AIzaSyCPGqmziPBIQahzwiDg9w95w0qzKDlpH3k",
+    authDomain: "npotw-production.firebaseapp.com",
+    databaseURL: "https://npotw-production-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "npotw-production",
+    storageBucket: "npotw-production.appspot.com",
+    messagingSenderId: "938102620349",
+    appId: "1:938102620349:web:63c556beb2e8f3486cb7d4",
+    measurementId: "G-NS4D0MNEQV"
 })
-const theSettings: FirestoreSettings = {
-    experimentalForceLongPolling: true,
-};
-  
 
-export const firestore = initializeFirestore(app, theSettings);
+const analytics = getAnalytics(app);
 
 export const auth = app.auth();
 export const projectStorage = firebase.storage(); 
