@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/otw/static/css/main.f92a44be.css",
-    "main.js": "/otw/static/js/main.2f87e964.js",
+    "main.css": "/otw/static/css/main.4fa823c7.css",
+    "main.js": "/otw/static/js/main.01ca20b6.js",
     "static/media/GothamBook.ttf": "/otw/static/media/GothamBook.58fb9151c57e59668f17.ttf",
     "static/media/GothamLight.ttf": "/otw/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
     "static/media/GothamMedium.ttf": "/otw/static/media/GothamMedium.0a910c0b9d50be6aa3dc.ttf",
     "static/media/Gotham-Bold.otf": "/otw/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
     "index.html": "/otw/index.html",
-    "main.f92a44be.css.map": "/otw/static/css/main.f92a44be.css.map",
-    "main.2f87e964.js.map": "/otw/static/js/main.2f87e964.js.map"
+    "main.4fa823c7.css.map": "/otw/static/css/main.4fa823c7.css.map",
+    "main.01ca20b6.js.map": "/otw/static/js/main.01ca20b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.f92a44be.css",
-    "static/js/main.2f87e964.js"
+    "static/css/main.4fa823c7.css",
+    "static/js/main.01ca20b6.js"
   ]
 }
