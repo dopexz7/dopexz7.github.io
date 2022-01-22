@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[435],{3375:function(n,_,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/Home/thisweekart",function(){return u(7244)}])}},function(n){n.O(0,[675,244,774,888,179],(function(){return _=3375,n(n.s=_);var _}));var _=n.O();_N_E=_}]);
