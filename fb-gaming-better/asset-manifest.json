@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fb-gaming-better/static/css/main.94d95a28.css",
+    "main.js": "/fb-gaming-better/static/js/main.2864382b.js",
+    "index.html": "/fb-gaming-better/index.html",
+    "main.94d95a28.css.map": "/fb-gaming-better/static/css/main.94d95a28.css.map",
+    "main.2864382b.js.map": "/fb-gaming-better/static/js/main.2864382b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94d95a28.css",
+    "static/js/main.2864382b.js"
+  ]
+}
