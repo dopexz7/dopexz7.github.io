@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fb-gaming-better/static/css/main.75633336.css",
-    "main.js": "/fb-gaming-better/static/js/main.fa8dedb4.js",
-    "index.html": "/fb-gaming-better/index.html",
-    "main.75633336.css.map": "/fb-gaming-better/static/css/main.75633336.css.map",
-    "main.fa8dedb4.js.map": "/fb-gaming-better/static/js/main.fa8dedb4.js.map"
+    "main.css": "/static/css/main.6cd5933e.css",
+    "main.js": "/static/js/main.a01a10d5.js",
+    "index.html": "/index.html",
+    "main.6cd5933e.css.map": "/static/css/main.6cd5933e.css.map",
+    "main.a01a10d5.js.map": "/static/js/main.a01a10d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.75633336.css",
-    "static/js/main.fa8dedb4.js"
+    "static/css/main.6cd5933e.css",
+    "static/js/main.a01a10d5.js"
   ]
 }
