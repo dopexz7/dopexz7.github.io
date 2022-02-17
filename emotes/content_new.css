@@ -504,22 +504,12 @@ margin-top:1px!important;
 display:none;
 }
 
-/*.rj1gh0hx:hover ._6coi.oygrvhab.ozuftl9m.l66bhrea.linoseic {
-display: var(--likereply) !important;
-opacity:1;
-transition:.5s;
-}*/
 .o22cckgh.q9uorilb.bo9p93cb.oygrvhab.kkf49tns.l66bhrea.linoseic {
 	display: var(--likereply);
 }
 .d2edcug0.hpfvmrgz.qv66sw1b.c1et5uql.lr9zc1uh.gfeo3gy3.a3bd9o3v.b1v8xokw.m9osqain {
 	color: var(--textcolor) !important;
 }
-/*._6coi.oygrvhab.ozuftl9m.l66bhrea.linoseic {
-display: var(--likereply) !important;
-opacity:.1;
-background:transparent!important;
-}*/
 
 .b5wmifdl {
 background:transparent!important;
@@ -750,7 +740,7 @@ margin-bottom:0!important;
 .bp9cbjyn.jeutjz8y.j83agx80.btwxx1t3 {
 height:45px!important;
 }
-/* emotes bottom of live stream */
+
 .f10w8fjw.f9o22wc5.oygrvhab.ad2k81qe.kvgmc6g5.taijpn5t.j83agx80 {
 display: none !important;
 }
@@ -957,13 +947,13 @@ color: #FFF;
 .emoteModal {
 	position: fixed;
 
-	z-index: 1; /* Sit on top */
+	z-index: 1; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.1);
   backdrop-filter: blur(12px);
   display: none;
   justify-content: center;
@@ -975,13 +965,12 @@ color: #FFF;
   	background-size: 400% 400%;
   	border-radius: 24px;
   
-   /* margin: 15% auto; 15% from the top and centered ; */ 
   padding: 20px;
   box-shadow: 0px 0px 14px 2px rgb(0 0 0 / 25%);
   color: #FFF;
   font-size: 24px;
   font-weight: 400;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
   text-align: center;
 }
 
@@ -992,8 +981,6 @@ color: #FFF;
 	display: none;
 }
 
-
-/*.j83agx80.bvz0fpym.c1et5uql {display: none} hides notify messages but also hides the channel's stickers */
 
 .sidebar-togglebtn {
 	background: url(images/sidebar.png) no-repeat center;
@@ -1050,7 +1037,7 @@ color: #FFF;
   padding: 0;
 }
 
-/* Style the list items */
+
 .sidebar-content ul li {
   cursor: pointer;
     padding: 9px;
@@ -1063,16 +1050,15 @@ color: #FFF;
     width: 70%;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+
 .sidebar-content ul li:nth-child(odd) {
 }
 
-/* Darker background-color on hover */
+
 .sidebar-content ul li:hover {
   
 }
 
-/* Style the close button */
 .close {
   padding: 4px 8px;
   margin-left: auto;
@@ -1083,13 +1069,13 @@ color: #FFF;
   background-color: #eb3b5a;
 }
 
-/* Style the header */
+
 .header {
   color: white;
   text-align: center;
 }
 
-/* Clear floats after the header */
+
 .header:after {
   content: "";
   display: table;
@@ -1113,7 +1099,7 @@ input[type=inputStreamer]::focus {
 	background: rgba(255,255,255,0.03);
 }
 
-/* Style the "Add" button */
+
 .addBtn {
     padding: 6px 15px;
     margin: 3px;
