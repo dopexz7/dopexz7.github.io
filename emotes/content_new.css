@@ -112,8 +112,9 @@ span.emote_wrapper:hover span.tooltiptext {
 	color: var(--textcolor) !important;
 }
 .j83agx80.buofh1pr.tgvbjcpo {overflow-y: scroll}
+
 .popoutbutton {
-	
+	background: url(chrome-extension://aflheebbcchbhephcfamiiciepiibpak/images/popout.png) no-repeat center;
 	background-size: 20px 20px;
     width: 20px;
     height: 20px;
@@ -125,7 +126,7 @@ span.emote_wrapper:hover span.tooltiptext {
 	background-color: rgba(255,255,255,0.1) ;
 }
 .theatrebutton {
-	background: url(https://fbgamingbetter.ddns.net/emotes/images/theatre.png) no-repeat center;
+	background: url(chrome-extension://aflheebbcchbhephcfamiiciepiibpak/images/theatre.png) no-repeat center;
 	background-size: 20px 20px;
     width: 20px;
     height: 20px;
@@ -983,7 +984,7 @@ color: #FFF;
 
 
 .sidebar-togglebtn {
-	background: url(https://fbgamingbetter.ddns.net/emotes/images/sidebar.png) no-repeat center;
+	background: url(chrome-extension://aflheebbcchbhephcfamiiciepiibpak/images/sidebar.png) no-repeat center;
 	width: 24px;
     height: 24px;
     background-size: 24px 24px;
@@ -998,7 +999,7 @@ color: #FFF;
 
 }
 .sidebar-togglebtn:hover {
-	background: rgba(255,255,255,0.1) url(https://fbgamingbetter.ddns.net/emotes/images/sidebar.png) no-repeat center;
+	background: rgba(255,255,255,0.1) url(chrome-extension://aflheebbcchbhephcfamiiciepiibpak/images/sidebar.png) no-repeat center;
 	width: 24px;
     height: 24px;
     background-size: 24px 24px;
