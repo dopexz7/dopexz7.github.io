@@ -111,7 +111,6 @@ span.emote_wrapper:hover span.tooltiptext {
 .d2edcug0.hpfvmrgz.qv66sw1b.c1et5uql.lr9zc1uh.a8c37x1j.keod5gw0.nxhoafnm.aigsh9s9.d9wwppkn.fe6kdd0r.mau55g9w.c8b282yb.mdeji52x.sq6gx45u.j5wam9gi.b1v8xokw.qrtewk5h {
 	color: var(--textcolor) !important;
 }
-.j83agx80.buofh1pr.tgvbjcpo {overflow-y: scroll}
 
 .popoutbutton {
 	background: url(chrome-extension://aflheebbcchbhephcfamiiciepiibpak/images/popout.png) no-repeat center;
@@ -217,10 +216,6 @@ overflow-y:scroll;
 
 .tw6a2znq.f10w8fjw.d1544ag0.pybr56ya.j83agx80.bp9cbjyn {
 padding-bottom:45px;
-position: fixed; z-index: 100;
-bottom: 0;
-width: 100%;
-background: #18181b;
 }
 
 .gmql0nx0.l94mrbxd.p1ri9a11.lzcic4wl.aahdfvyu.hzawbc8m {
