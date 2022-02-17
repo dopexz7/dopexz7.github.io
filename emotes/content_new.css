@@ -221,7 +221,9 @@ bottom: 0;
 width: 100%;
 background: #18181b;
 }
-.j83agx80.buofh1pr.tgvbjcpo {overflow-y: scroll}
+div[data-pagelet="Live chat"] {
+  overflow-y: scroll;
+}
 .gmql0nx0.l94mrbxd.p1ri9a11.lzcic4wl.aahdfvyu.hzawbc8m {
 	color: var(--textcolor);
 }
