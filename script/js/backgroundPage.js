@@ -1,0 +1,1 @@
+(()=>{"use strict";chrome.runtime.onInstalled.addListener((function(e){"install"==e.reason?chrome.tabs.create({url:"https://dopechat.ddns.net/"}):"update"==e.reason&&chrome.storage.local.get("vers11",(function(e){e.vers11||(chrome.tabs.create({url:"https://dopechat.ddns.net/"}),chrome.storage.local.set({vers11:"dontdisplaythisshit"}))}))}))})();
